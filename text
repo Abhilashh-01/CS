@@ -37,3 +37,14 @@ def check_password(password):
     return "Strong"
 pwd = input("Enter Password: ")
 print(check_password(pwd))
+
+
+
+// Packet Sniffing
+
+python3 -m http.server 8080
+sudo tcpdump -i any -w capture.pcap port 8080
+http.request.method=="GET"
+
+// dvwa
+docker run --rm -it -p 80:80 vulnerables/web-dvwa
